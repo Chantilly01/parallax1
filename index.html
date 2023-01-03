@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax scrolling</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+
+<body>
+    <header>
+
+        <h2>Logo</h2>
+
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="sec">
+        <h2>Parallax Scrolling Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi debitis cumque ex suscipit placeat fuga explicabo corrupti, molestias perferendis deleniti, esse autem nihil, ipsa natus itaque voluptates beatae perspiciatis quidem tempore iste.
+            Quidem dolorem enim aliquid nihil cupiditate tenetur, molestias ipsa commodi magnam, ipsam quisquam quaerat illo voluptas fugit unde molestiae quos quas est aliquam, autem vitae. Debitis error iusto laudantium maxime earum quam, reiciendis
+            recusandae quod quas corrupti? Accusantium quidem, suscipit eveniet et laborum sint beatae. Rem enim unde non velit doloremque temporibus eaque animi, porro quam repudiandae adipisci sapiente distinctio architecto tempore aspernatur assumenda,
+            eius alias ex reprehenderit corrupti mollitia<br><br> ullam culpa? Architecto repellat voluptatem voluptate laborum sunt assumenda vero dolorum, praesentium ad itaque. Animi, exercitationem. Non est praesentium expedita iure iste sunt, voluptatum
+            illo impedit dicta magnam alias blanditiis facilis rerum ex repellendus porro quo architecto eligendi reprehenderit. Quaerat reiciendis facere quibusdam inventore debitis libero dolore quos, accusantium commodi minus non veniam. <br><br> Aut
+            ex ab deleniti deserunt animi dicta unde, libero officiis earum ipsam voluptatem fuga id quasi corrupti iste, ut esse, laudantium repudiandae rem quidem. Aperiam, amet nam libero dignissimos itaque vero ratione, expedita voluptates enim esse
+            qui. Cum vitae unde rerum porro ullam eligendi beatae cupiditate iste? Tempore magnam earum dolor dolore dicta eaque vero distinctio, perferendis ab repudiandae laboriosam harum possimus aperiam eos nobis eius, corrupti enim. Nisi perspiciatis,
+            repellat accusantium facilis corrupti fugiat dolor beatae numquam. Aperiam, odio officiis in esse ipsam adipisci quod. Sunt tempora repellendus corporis dicta ut, nulla sed consequuntur facilis cumque debitis velit. Soluta est quos non sit,
+            unde beatae, nam necessitatibus cupiditate maxime iure, id mollitia hic autem quas placeat facere ut consectetur nobis ipsum temporibus quod sapiente alias sequi tenetur? Debitis laborum doloremque facilis, dolore reiciendis illo soluta laudantium
+            architecto nihil necessitatibus sunt possimus autem nobis officia libero voluptates assumenda excepturi maxime commodi voluptatibus eos. Quibusdam, doloremque, temporibus aut provident eos blanditiis veniam aliquid illum recusandae libero
+            velit quo sint ipsa adipisci consequuntur inventore quod officiis perspiciatis impedit illo molestias praesentium. Enim sint, ab quasi assumenda fuga, itaque, architecto animi autem necessitatibus eius porro delectus. Impedit, quos.</p>
+    </section>
+    <section class="parallax">
+        <h2 id="text">Parallax Website</h2>
+        <img src="./css/monutain_01.png" id="m1">
+        <img src="./css/trees_02.png" id="t2">
+        <img src="./css/monutain_02.png" id="m2">
+        <img src="./css/trees_01.png" id="t1">
+        <img src="./css/man.png" id="man">
+        <img src="./css/plants.png" id="plants">
+    </section>
+    <section class="sec">
+        <h2>Parallax Scrolling Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi debitis cumque ex suscipit placeat fuga recusandae quod quas corrupti? Accusantium quidem, suscipit eveniet et laborum sint beatae. Rem enim unde non velit doloremque temporibus
+            eaque animi, porro quam repudiandae adipisci sapiente distinctio architecto tempore aspernatur assumenda, eius alias ex reprehenderit corrupti mollitia<br><br> ullam culpa? Architecto repellat voluptatem voluptate laborum sunt assumenda vero
+            dolorum, praesentium ad itaque. Animi, exercitationem. Non est praesentium expedita iure iste sunt, voluptatum illo impedit dicta magnam alias blanditiis facilis rerum ex repellendus porro quo architecto eligendi reprehenderit. Quaerat reiciendis
+            facere quibusdam inventore debitis libero dolore quos, accusantium commodi minus non veniam. <br><br> Aut ex ab deleniti deserunt animi dicta unde, libero officiis earum ipsam voluptatem fuga id quasi corrupti iste, ut esse, laudantium repudiandae
+            rem quidem. Aperiam, amet nam libero dignissimos itaque vero ratione, expedita velit quo sint ipsa adipisci consequuntur inventore quod officiis perspiciatis impedit illo molestias praesentium. Enim sint, ab quasi assumenda fuga, itaque, architecto
+            animi autem necessitatibus eius porro delectus. Impedit, quos.</p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#m1", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 100,
+        })
+        gsap.from("#m2", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: 100,
+        })
+        gsap.from("#t1", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: -100,
+        })
+        gsap.from("#t2", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 300,
+        })
+        gsap.from("#man", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 150,
+            x: -200,
+        })
+        gsap.from("#text", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: 600,
+        })
+    </script>
+</body>
+
+</html>
